@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 set -e
 mkdir dev
@@ -12,5 +12,5 @@ export GEM_HOME=$PWD/.gems
 gem install utilrb 
 ruby autoproj_bootstrap git ../
 source env.sh
-amake --all -k
+autoproj full-build
 
