@@ -1,0 +1,12 @@
+before_install:
+    - sudo apt-get update
+
+rvm:
+    - 1.9.3
+
+env:
+    - ROCK_FORCE_FLAVOR=master
+
+install:
+    - ./bootstrap.sh
+
